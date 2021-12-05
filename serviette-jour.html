@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Bloody Minou - Serviette de jour</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body class="serviette-jour">
+		<header>
+			<div class="banniere">Livraison offerte dès 50€ d'achat</div>
+			<nav class="menu">
+				<ul>
+					<li class="logo">
+						<a href="index.html">Bloody Minou</a>
+					</li>
+					<li>
+						<a href="serviette-jour.html">Serviette de jour</a>
+					</li>
+					<li>
+						<a href="serviette-nuit.html">Serviette de nuit</a>
+					</li>
+					<li>
+						<a href="#">Le concept</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">Nos points de vente</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/francais.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/recherche.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/profil.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/panier.png">
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="fiche-produit">
+				<div class="image-produit galerie">
+					<img id="galerie-pleine-taille" src="images/serviette_1.png">
+					<div class="apercus">
+						<img src="images/serviette_1.png">
+						<img src="images/serviette_2.png">
+						<img src="images/serviette_3.png">
+					</div>
+				</div>
+				<div class="description-produit">
+					<div class="nom-produit">Serviette de jour</div>
+					<div class="texte-produit">
+						<ul>
+							<li>
+								<img src="images/fleche_1.png">
+								<span>Modèle fin</span>
+							</li>
+							<li>
+								<img src="images/fleche_2.png">
+								<span>Modèle discret</span>
+							</li>
+							<li>
+								<img src="images/fleche_3.png">
+								<span>Modèle anti-traces</span>
+							</li>
+						</ul>
+					</div>
+					<form class="commander-produit">
+						<span>8,99€</span>
+						<label>
+							<span>Quantité :</span>
+							<input type="number" value="1" min="1">
+						</label>
+
+						<button type="submit">Ajouter au panier</button>
+					</form>
+				</div>
+			</div>
+			<a href="http://stillincontact.fr/public/Michel&Augustin/site/index.htm" target="_blank" class="skyscraper">
+				<img src="images/megaskyscraper.jpg">
+			</a>
+		</main>
+		<footer>
+			<nav class="liens">
+				<ul>
+					<li>
+						<a href="#">Politique de confidentialité</a>
+					</li>
+					<li>
+						<a href="#">Mentions légales</a>
+					</li>
+					<li>
+						<a href="#">Conditions générales de ventes</a>
+					</li>
+					<li>
+						<a href="#">La fondation Bloody Minou</a>
+					</li>
+					<li>
+						<a href="#">Rejoindre Bloody Minou</a>
+					</li>
+					<li>
+						<a href="#">@BloodyMinou</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/linkedin.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/instagram.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/twitter.png">
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			let imagePleineTaille = document.getElementById('galerie-pleine-taille');
+			let apercus = document.querySelectorAll('.image-produit.galerie .apercus img');
+			for (let apercu of apercus) {
+				apercu.addEventListener('click', event => {
+					imagePleineTaille.src = apercu.src;
+				});
+			}
+		});
+	</script>
+</html>

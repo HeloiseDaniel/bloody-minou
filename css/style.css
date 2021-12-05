@@ -1,0 +1,271 @@
+/* Polices */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Global */
+
+body {
+	margin: 0;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+}
+
+body.accueil {
+	background-color: #FFE3EF;
+}
+
+body.serviette-jour {
+	background-color: #FAF5B5;
+}
+
+body.serviette-nuit {
+	background-color: #566489;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+header .banniere {
+	padding: 10px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+header .banniere a {
+	text-decoration: none;
+	color: #000000;
+}
+
+header .menu {
+	border-bottom: 2px solid #000000;
+}
+
+header .menu ul {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	margin: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+header .menu li {
+	font-family: 'Abril FatFace';
+	font-size: 0.8em;
+	list-style: none;
+	margin-left: 20px;
+}
+
+header .menu li.logo {
+	font-family: 'Molle';
+	font-size: 2em;
+}
+
+header .menu a {
+	text-decoration: none;
+	color: #000000;
+	display: flex;
+}
+
+header .menu a:hover {
+	text-decoration: underline;
+}
+
+header .menu li:not(.logo) {
+	text-transform: uppercase;
+}
+
+@media (max-width: 960px) {
+  .menu {
+    width: 700px;
+  }
+}
+
+@media (max-width: 760px){
+	.menu{
+		width: 600px;
+	}
+}
+
+@media (max-width: 500px){
+	.menu{
+		width: 400px;
+	}
+}
+
+/* Contenu */
+
+main {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 50px;
+}
+
+main .fiche-produit {
+	flex-grow: 1;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+main .image-produit {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+main .image-produit > img {
+	width: 100%;
+	background-color: #F6F1EE;
+	border: 2px solid #C6ABCE;
+}
+
+main .image-produit.galerie .apercus {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+main .image-produit.galerie .apercus img {
+	height: 150px;
+	background-color: #F6F1EE;
+	border: 2px solid #C6ABCE;
+	cursor: pointer;
+}
+
+main .image-produit.galerie .apercus img + img {
+	margin-left: 20px;
+}
+
+main .description-produit {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	margin: 0 50px;
+}
+
+main .nom-produit {
+	font-family: 'Molle';
+	font-size: 3em;
+	margin-bottom: 80px;
+}
+
+main .texte-produit {
+	flex-grow: 1;
+}
+
+main .texte-produit > img {
+	width: 100%;
+}
+
+main .texte-produit ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+main .texte-produit li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: 'Molle';
+	font-size: 1.5em;
+}
+
+main .commander-produit {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	height: 150px;
+	margin-top: 50px;
+
+	font-size: 1.25em;
+	text-decoration: none;
+	color: #000000;
+
+	background-color: #FFFFFF;
+	border: 2px solid #C6ABCE;
+}
+
+main a.commander-produit:hover {
+	text-decoration: underline;
+}
+
+main .commander-produit label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+main .commander-produit input {
+	border: 2px solid #000000;
+	padding: 10px;
+	background-color: transparent;
+	color: inherit;
+	margin-left: 20px;
+	width: 50px;
+}
+
+main .commander-produit button {
+	border: 0;
+	background-color: transparent;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+}
+
+main .commander-produit button:hover {
+	text-decoration: underline;
+}
+
+main .commander-produit img {
+	height: 100%;
+}
+
+/* Footer */
+
+footer {
+	background-color: #F6F1EE;
+}
+
+footer .liens ul {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	margin: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+footer .liens li {
+	font-family: 'Abril FatFace';
+	font-size: 0.8em;
+	list-style: none;
+	margin-left: 20px;
+}
+
+footer .liens a {
+	display: flex;
+	text-decoration: none;
+	color: #000000;
+}
+
+0825000706
+706
+48PX4M25ZRHB
